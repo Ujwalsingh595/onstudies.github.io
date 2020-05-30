@@ -1,0 +1,16 @@
+
+.underline-small{
+position:relative;
+}
+.underline-small::after{
+content:'';
+height:3px;
+width:18%;
+background:#f24432;
+position:absolute;
+left:460px;
+bottom:0;
+}
+
+
+

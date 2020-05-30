@@ -1,0 +1,92 @@
+.bgimg{
+background-image:url("index.jpg");
+background-size:100% 100%;
+background-attachment:fixed;
+width:100%;
+height:660px;
+}
+.headerset{
+	padding-top:250px;
+	box-sizing:border-box;
+}
+.headerset h2{
+	font-size:32px;
+color:#FFFFFF;
+}
+.headerset h1{
+	font-size:48px;
+	color:#FFFFFF;
+
+}
+.cardanimation.progress1{
+	opacity:0;
+}
+.cardanimation.animated.progress1.animated{
+	opacity:1;
+}
+.contactus{
+	opacity:0;
+}
+.contactus.animated{
+	opacity:1;
+}
+.portfolio{
+	height:100%;
+	width:100%;
+	padding:60px 0px 50px;
+}
+.portfolio h1{
+	font-size:50px;
+	font-weight:
+}
+.ourteam{
+height:700px;
+padding:100px 0px 60px;
+width:100%;
+}
+.ourteam h1{
+font-size:50px;
+}
+}
+.footer
+{
+	height:20px;
+}
+.footer h6
+{
+	font-size:10px;
+	line-height:50px;
+}
+@media(min-width:992px)
+{
+}
+@media(min-width:768px)and(max-width:991px)
+{
+}
+@media(min-width:575px)and(max-width:767px)
+{
+}
+@media(min-width:480px)and(max-width:574px)
+{
+}
+@media(max-width:479px)
+{
+
+.headerset h2{
+	font-size:20px;
+
+}
+.headerset h1{
+	font-size:28px;
+	
+}
+.portfolio{
+	height:1200px;
+padding:5%;
+	
+}
+.ourteam{
+height:1600px;
+}
+
+}

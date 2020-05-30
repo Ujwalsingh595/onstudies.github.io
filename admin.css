@@ -1,0 +1,27 @@
+.sidenav{
+height:100%;
+width:300px;
+position:fixed;
+top=0;
+left=0;
+background-color:#111;
+padding-top:30px;
+z-index:1;
+overflow-x:hidden;
+
+}
+.sidenav a{
+	padding:6px 8px 6px 16px;
+	text-decoration:none;
+	font-size:25px;
+	color:#818181;
+	display:block;
+	
+}
+.main{
+	margin-left:350px;
+	padding:0px 10px;
+	margin-right:50px;
+	
+	
+}

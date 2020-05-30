@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fontawesome.com">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet"href="indeximage.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<meta name="viewport"content="width=device-width,initial-scale=1">
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="validation.js"></script>
+<script>
+
+function validation()
+{
+var emailcheck=document.getElementById('emailcheck').value;
+var pattern=/^[A-Za-z_.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+if(pattern.test(emailcheck))
+{
+document.getElementById('msg').innerHTML="Email is ok";
+}
+else{
+
+document.getElementById('msg').innerHTML="Email is not  ok";
+return false;
+}}
+</script>
+<style>
+.form-container{
+background:#fff;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px 0px #000;
+
+}
+
+
+</style>
+
+
+</head>
+
+      <body>
+      	<div class="bgimg">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<div class="container">
+<a href=""class="navbar-brand text-warning font-weight-bold">E-Learning</a>
+<button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#collapsenavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse text-center"id="collapsenavbar">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a href=""class="nav-link text-white">Home</a>
+</li>
+<li class="nav-item dropdowm">
+  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Study</button>
+  <div class="dropdown-menu">
+    <button class="dropdown-item" type="button"  href="#">Video lecture</button>
+    <button class="dropdown-item" href="#">Assignment</button>
+    <button class="dropdown-item" href="#">Query</button>
+    <button class="dropdown-item" href="#">Notes</button>
+</div>
+</li>
+
+
+   
+    <li class="nav-item">
+
+
+<a href=""class="nav-link text-white">Exams</a></li>
+<li>
+<a href=""class="nav-link text-white">Tutorials</a></li>
+<li>
+<a href=""class="nav-link text-white">Results</a></li>
+<li>
+<a href=""class="nav-link text-white">Notices</a>
+</li>
+<li class="nav-item">
+<a href=""class="nav-link text-white">About</a>
+</li>
+</div>
+</ul>
+</div>
+</nav>
+
+<div class="container-fuid">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-lg-offset-4">
+<form class="form-container"action=""method="post"><br><br>
+	<h1 class="text-success text-center">Contact Us</h1><br>
+<div class="form-group">
+<label ><i class="fa fa-user"></i>Username:</label>
+<input type="text"name="username"id="emailcheck"class="form-control"required>
+<span id="usererror"class="text-danger font-weight-bold"></spam>
+</div>
+<div class="form-group">
+<label><i class="fas fa-user-shield"></i>Email:</label>
+<input type="text"name="email"id="email"class="form-control"required>
+<span id="emailerror"class="text-danger font-weight-bold"></spam>
+</div>
+<div class="form-group">
+<label><i class="fa fa-mobile"></i> Mobile</label>
+<input type="text"name="mobile"id="number"class="form-control"required>
+<span id="numbererror"class="text-danger font-weight-bold"></spam>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Enter your issue.</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+<button class="btn btn-primary btn-block"name="submit">Submit</button>
+<div class="alert alert-success"id="success"style="margin-top:10px; display:none">
+<strong>Success:</strong>Your messege is delivered.
+</div>
+<div class="alert alert-danger"id="failure"style="margin-top:10px; display:none">
+<strong>Already exist:</strong>This username or Email is already taken.
+</div>
+</div>
+</div>
+</div>
+</form>

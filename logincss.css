@@ -1,0 +1,15 @@
+.reg-box{
+width:1200px;
+float:none;
+margin-top:150px;
+margin-left:350px;
+
+
+}
+.form-container{
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px 0px #000;
+
+}
